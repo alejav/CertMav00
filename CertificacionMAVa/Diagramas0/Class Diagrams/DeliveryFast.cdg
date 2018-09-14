@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Pedido">
+  <ClassDiagramComponents>
+    <Class name="Pedido" package="" visibility="public" xPosition="135.0" yPosition="188.0">
+      <Fields>
+        <Field name="Usuario" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Usuario" package="" visibility="public" xPosition="415.0" yPosition="64.0">
+      <Fields>
+        <Field name="CorreoE" type="String" visibility="private"/>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Ciudad" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="Pedidos" source="Usuario" target="Pedido" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
